@@ -1,0 +1,12 @@
+﻿using System.Collections;
+using UnityEngine;
+
+public class FollowPlayer : MonoBehaviour {
+	//Reference to target
+	public Transform target;
+
+	void Update () {
+		//Assign coordinate
+		GetComponent<Transform>().position = target.position;
+	}
+}
